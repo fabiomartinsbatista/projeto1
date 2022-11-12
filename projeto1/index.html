@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPEÕES DA FORMULA 1</title>
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <style>
+        * {
+            font-family: "Verdana", sans-serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+            color: #fff;
+        }
+
+        body {
+            margin: 2rem;
+            background-image:url("imagens/Formula-1.jpg");
+            margin-left: 90px;
+            margin-right:auto;
+            margin-bottom: -100px;
+        
+
+
+
+
+            
+        }
+
+
+        .carrosel {
+            -webkit-perspective: 250px;
+            -moz-perspective: 250px;
+            width: 400px;
+            height: 200px;
+            top: 50px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes efeitoCarrosel {
+            from {
+                -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        @-moz-keyframes efeitoCarrosel {
+            from {
+                -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                z-index: 10;
+                opacity: 1
+            }
+
+            50% {
+                z-index: -10;
+            }
+
+            to {
+                -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                z-index: 10;
+                opacity: 1
+            }
+        }
+
+        .caixa__card {
+            width: 90px;
+            height: 100px;
+            background-color: #442222;
+            position: absolute;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            top: 35px;
+            left: 125px;
+            font-size: 9px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+            text-align: center;
+            -webkit-animation-name: efeitoCarrosel;
+            -moz-animation-name: efeitoCarrosel;
+            -webkit-animation-duration: 9s;
+            -moz-animation-duration: 9s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+
+        .caixa__card:hover {
+            border: solid gold 3px;
+            box-shadow: 0px 0px 10px yellow;
+        }
+
+        .caixa__card.cc__1 {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+            -webkit-animation-delay: -7s;
+            -moz-animation-delay: -7s;
+        }
+
+        .caixa__card.cc__2 {
+
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+            -webkit-animation-delay: -6s;
+            -moz-animation-delay: -6s;
+        }
+
+        .caixa__card.cc__3 {
+
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+            -webkit-animation-delay: -5s;
+            -moz-animation-delay: -5s;
+        }
+
+        .caixa__card.cc__4 {
+            background: linear-gradient(-229deg, #cf91ff, #5782F5);
+            -webkit-animation-delay: -4s;
+            -moz-animation-delay: -4s;
+        }
+
+        .caixa__card.cc__5 {
+            background: linear-gradient(-229deg, #642B73, #C6426E);
+            -webkit-animation-delay: -3s;
+            -moz-animation-delay: -3s;
+        }
+
+        .caixa__card.cc__6 {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+            -webkit-animation-delay: -2s;
+            -moz-animation-delay: -2s;
+        }
+
+        .caixa__card.cc__7 {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+            -webkit-animation-delay: -1s;
+            -moz-animation-delay: -1s;
+        }
+
+        .caixa__card.cc__8 {
+            background: linear-gradient(-229deg, #1472ff, #A8EB12);
+        }
+
+        h1{
+            text-align: center;
+            color: orangered;
+        }
+        a {
+            color:black;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h1>CAMPEÕES DA FÓRMULA 1</h1>
+    <div class="conteudo">
+        <div class="carrosel">
+            <div class="caixa__card cc__1">
+                <a href="https://www.youtube.com/watch?v=GUNv76khL0E" target="_blank"><img src="imagens/schumacher.jpg" width="80px">MICHAEL SCHUMACHER<br>7 titulos</a>
+            </div>
+            <div class="caixa__card cc__2">
+                <a href="https://www.youtube.com/watch?v=tKb5-5yWeCA" target="_blank"><img src="imagens/Lewis-Hamilton.jpg" target="_blank" width="80px">LEWIS HAMILTON<br>7 titulos</a>
+            </div>
+            <div class="caixa__card cc__3">
+                <a href="https://www.youtube.com/watch?v=l8KOK1GjKWk" target="_blank"><img src="imagens/giuseppefarina-1950.webp" width="80px">JUAN MANOEL FANGIO<br>5 titulos</a>
+            </div>
+            <div class="caixa__card cc__4">
+                <a href="https://www.youtube.com/watch?v=AtDV4k5s4Ic" target="_blank"><img src="imagens/prost-silverstone-1990b.webp" width="80px">ALAIN PROST<br>4 titulos</a>
+            </div>
+            <div class="caixa__card cc__5">
+                <a href="https://www.youtube.com/watch?v=nYUITaZihZU" target="_blank"><img src="imagens/SEBASTIAN-VETTEL-8086756.webp" width="80px">SEBASTIAN VETTEL<br>4 titulos</a>
+            </div>
+            <div class="caixa__card cc__6">
+                <a href="https://www.youtube.com/watch?v=NnDnEaJ2B0g" target="_blank"><img src="imagens/jack-brabham-1.jpg" width="80px"> JACK BRABHAM<br>3 titulos</a>
+            </div>
+            <div class="caixa__card cc__7">
+                <a href="https://www.youtube.com/watch?v=he21YnjMYq4" target="_blank"><img src="imagens/jackie.webp" width="80px">JACKIE STEWART<br>3 titulos</a>
+            </div>
+            <div class="caixa__card cc__8">
+                <a href="" target="_blank"><img src="imagens/nikilauda2105a.jpg" width="80px"> NIKI LAUDA<br>3 titulos</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
